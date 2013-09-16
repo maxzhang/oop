@@ -70,3 +70,16 @@ var SubCls3 = Klass.define(MyCls, {
 
 SubCls3.fn1();
 ```
+
+### 安装Node模块
+
+```
+npm install javascript-oop
+```
+
+```
+var Klass = require('javascript-oop');
+var MyCls = Klass.define({
+    // ...
+});
+```

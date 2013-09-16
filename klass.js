@@ -1,5 +1,6 @@
-(function(window) {
-    var slice = Array.prototype.slice,
+(function() {
+    var global = this,
+        slice = Array.prototype.slice,
         enumerables = ['hasOwnProperty', 'valueOf', 'isPrototypeOf', 'propertyIsEnumerable', 'toLocaleString', 'toString', 'constructor'],
         noArgs = [],
         TemplateClass = function() {},
@@ -302,8 +303,7 @@
         }
     }
 
-    if (typeof window === "object" && typeof window.document === "object") {
-        window.Klass = Klass;
+    if (typeof global === "object" && typeof global.document === "object") {
+        global.Klass = Klass;
     }
-
-})(window);
+})();
