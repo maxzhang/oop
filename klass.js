@@ -207,7 +207,7 @@
             return this.constructor.apply(this, arguments) || null;
         }
         return constructor;
-    }
+    };
 
     var extend = function(newClass, newClassExtend) {
         var basePrototype = Base.prototype,
@@ -230,7 +230,7 @@
         }
 
         newClass.extend(SuperClass);
-    }
+    };
 
 
     /**
