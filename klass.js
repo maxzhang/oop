@@ -1,5 +1,7 @@
 (function() {
-    var global = this,
+    var global = (function(){
+            return this || (0, eval)('this');
+        }()),
         slice = Array.prototype.slice,
         enumerables = ['hasOwnProperty', 'valueOf', 'isPrototypeOf', 'propertyIsEnumerable', 'toLocaleString', 'toString', 'constructor'],
         noArgs = [],
@@ -291,19 +293,12 @@
         }
     };
 
-    if (typeof module === "object" && module && typeof module.exports === "object") {
-        // 声明 Node module
+    if (typeof module === 'object' && module && typeof module.exports === 'object') {
         module.exports = Klass;
-    } else {
-        // 声明 AMD / SeaJS module
-        if (typeof define === "function" && (define.amd || seajs)) {
-            define('klass', [], function() {
-                return Klass;
-            });
-        }
+    } else if (typeof define === 'function') {
+        define('klass', [], function() { return Klass; });
     }
-
-    if (typeof global === "object" && typeof global.document === "object") {
+    if (typeof global === 'object' && typeof global.document === 'object') {
         global.Klass = Klass;
     }
-})();
+}());

@@ -1,23 +1,26 @@
 {
     "name": "javascript-oop",
     "description": "JavaScript面向对象编程，类声明、继承……",
-    "version": "1.0.0",
-    "homepage": "https://github.com/mxjs/oop",
-    "author": "Max Zhang <zhangdaiping@gmail.com>",
+    "version": "1.0.1",
+    "author": {
+        "name": "Max Zhang",
+        "email": "zhangdaiping@gmail.com",
+        "url": "https://github.com/maxzhang"
+    },
+    "respository": {
+        "type": "git",
+        "url": "https://github.com/maxzhang/oop.git"
+    },
     "keywords": [
         "javascript",
         "oop",
         "object-oriented",
         "Object-Oriented Programming"
     ],
-    "respository": {
-        "type": "git",
-        "url": "https://github.com/mxjs/oop.git"
+    "bugs": {
+        "url": "https://github.com/maxzhang/oop/issues"
     },
     "main": "klass",
-    "bugs": {
-        "url": "https://github.com/mxjs/oop/issues"
-    },
     "engines": {
         "node": "*"
     },

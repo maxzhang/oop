@@ -1,0 +1,13 @@
+.git
+.idea
+.project
+.settings
+.DS_Store
+
+*~
+*.diff
+*.patch
+
+bower_components
+node_modules
+npm-debug.log
