@@ -74,7 +74,8 @@ var SubCls3 = Klass.define(MyCls, {
 SubCls3.fn1();
 ```
 
-### 安装Node模块
+安装Node模块
+------------
 
 ```shell
 npm install javascript-oop --save-dev
