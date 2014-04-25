@@ -142,7 +142,7 @@
          *  cls1.sayHello(); // 输出 'hello world!'
          * </code>
          *
-         * 如果想为类的方法定义一个新的别名，应该使用下面的方式，不能使用override函数：
+         * 如果想为类的方法定义一个新的别名，应该使用下面的方式，不能使用implement函数：
          * <code>
          *  Cls1.prototype.speak = Cls1.prototype.say;
          *
